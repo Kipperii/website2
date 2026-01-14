@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientfunds Precast Ltd. | 關於我們</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Orientfunds Precast Ltd. Logo">
+            </a>
+            
+            <div class="header-right">
+                <div class="lang-switcher">
+                    <div class="language-switch">
+                        <button class="lang-btn" onclick="switchToEnglish()">EN</button>
+                        <span>|</span>
+                        <button class="lang-btn active" onclick="switchToChinese()">繁</button>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+                        <li><a href="about.html" class="active" data-i18n="nav_about">關於我們</a></li>
+                        <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+                        <li><a href="sustainability.html" data-i18n="nav_sustainability">可持續發展</a></li>
+                        <li><a href="careers.html" data-i18n="nav_careers">事業發展</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span>☰</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+            <li><a href="about.html" class="active" data-i18n="nav_about">關於我們</a></li>
+            <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+            <li><a href="sustainability.html" data-i18n="nav_sustainability">可持續發展</a></li>
+            <li><a href="careers.html" data-i18n="nav_careers">事業發展</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" style="background-image: url('../opl-website-img/Top%20Pic%20%E9%97%9C%E6%96%BC%E6%88%91%E5%80%91.jpg');">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" style="position: relative; color: white; text-align: left; max-width: 1200px; width: 100%; padding: 0 40px; margin: 0 auto;">
+            <h1 data-i18n="hero_title" style="font-size: 3.5rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6); line-height: 1.3; font-weight: 300; letter-spacing: 2px;">同心協力・精益求精<br>以心打造理想家園</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb" style="background-color: #f5f5f5; padding: 15px 0; font-size: 0.9rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+            <span style="color: var(--text-light);">工廠</span> <span style="color: var(--text-light);">/</span> <span style="color: var(--text-dark); font-weight: 500;">關於我們</span>
+        </div>
+    </div>
+
+    <section class="about-hongfai-section" style="padding: 80px 40px; background-color: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div class="about-hongfai-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;">
+                <div class="about-hongfai-img" style="text-align: center;">
+                    <img src="../opl-website-img/icon_home.png" alt="關於鴻輝" style="width: 100%; max-width: 350px;">
+                </div>
+                <div class="about-hongfai-text">
+                    <h2 style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 30px; font-weight: 700;" data-i18n="about_hongfai_title">關於鴻輝</h2>
+                    
+                    <p data-i18n="about_hongfai_desc" style="line-height: 2; color: var(--text-dark); font-size: 1rem;">
+                        鴻輝預製件有限公司專注於高品質建築預製構件的設計與生產，致力為各類工程提供穩定可靠的建材方案。憑藉專業技術與創新思維，我們能靈活滿足不同項目的需求，從住宅樓宇到基礎設施，均提供高效、安全、可持續的解決方案。秉持「以心建家」的承諾，我們不僅打造堅固耐用的建築基構，更以細緻工藝和嚴謹管理，營造安心舒適的生活環境，讓每一件預製構件都承載著家的溫度與信任。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="core-values-section" style="padding: 80px 40px; background-color: #f9f9f9;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" data-i18n="val_title" style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 60px; text-align: center; font-weight: 700;">核心價值</h2>
+            <div class="core-values-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div class="value-card" style="border: 3px solid var(--primary-green); border-radius: 15px; padding: 40px 30px; text-align: center; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div class="value-icon" style="margin-bottom: 25px;">
+                        <img src="../opl-website-img/Icon 目標.png" alt="Goal" style="width: 120px; margin: 0 auto; display: block;">
+                    </div>
+                    <h3 data-i18n="val_goal_title" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 20px; border-bottom: 3px solid var(--primary-green); padding-bottom: 12px; display: inline-block; font-weight: 600;">目標</h3>
+                    <p data-i18n="val_goal_desc" style="color: var(--text-dark); line-height: 1.8; font-size: 0.95rem;">成為城市建設最堅實的推動力，每一件預製構件都是承載夢想的基石，透過品質、創新與責任，讓橋樑、高樓與道路更穩固、更美好。</p>
+                </div>
+                <div class="value-card" style="border: 3px solid var(--primary-green); border-radius: 15px; padding: 40px 30px; text-align: center; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div class="value-icon" style="margin-bottom: 25px;">
+                        <img src="../opl-website-img/Icon 使命.png" alt="Mission" style="width: 120px; margin: 0 auto; display: block;">
+                    </div>
+                    <h3 data-i18n="val_mission_title" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 20px; border-bottom: 3px solid var(--primary-green); padding-bottom: 12px; display: inline-block; font-weight: 600;">使命</h3>
+                    <p data-i18n="val_mission_desc" style="color: var(--text-dark); line-height: 1.8; font-size: 0.95rem;">以建築預製件承托城市生命力，我們承諾為合作伙伴提供可靠、準時、具競爭力的支持，為社會打造安全、環保、可持續的建材，為未來世代留下可信的基礎。</p>
+                </div>
+                <div class="value-card" style="border: 3px solid var(--primary-green); border-radius: 15px; padding: 40px 30px; text-align: center; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div class="value-icon" style="margin-bottom: 25px;">
+                        <img src="../opl-website-img/Icon 願景.png" alt="Vision" style="width: 120px; margin: 0 auto; display: block;">
+                    </div>
+                    <h3 data-i18n="val_vision_title" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 20px; border-bottom: 3px solid var(--primary-green); padding-bottom: 12px; display: inline-block; font-weight: 600;">願景</h3>
+                    <p data-i18n="val_vision_desc" style="color: var(--text-dark); line-height: 1.8; font-size: 0.95rem;">成為亞洲最具影響力的綠色預製件品牌，推動城市邁向低碳未來，透過智能生產與智慧物流，打造「未來工廠」，讓科技與環保並肩前行，承載世代的夢想與希望。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="milestone-section" style="padding: 80px 40px; background-color: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" data-i18n="mile_title" style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 60px; text-align: center; font-weight: 700;">里程碑</h2>
+            
+            <div class="timeline-container" style="max-width: 1000px; margin: 0 auto; position: relative;">
+                <div class="timeline-labels-top" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; position: relative; height: 100px;">
+                    <div style="position: absolute; left: 30%; transform: translateX(-50%); text-align: center; width: 180px;">
+                        <h3 style="color: var(--primary-green); font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2002_label">主力私人工程</h3>
+                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2002_sublabel">開始承接私人工程</p>
+                    </div>
+                    <div style="position: absolute; left: 70%; transform: translateX(-50%); text-align: center; width: 180px;">
+                        <h3 style="color: var(--primary-green); font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2022_label">輕石矢間牆板</h3>
+                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2022_sublabel">成功研發輕石矢間<br>牆板並推出市場</p>
+                    </div>
+                </div>
+                
+                <svg width="100%" height="160" viewBox="0 -20 1000 180" preserveAspectRatio="xMidYMid meet" style="display: block;">
+                    <path d="M 0,80 C 40,80 60,130 100,130 C 140,130 260,30 300,30 C 340,30 460,130 500,130 C 540,130 660,30 700,30 C 740,30 860,130 900,130 C 940,130 960,80 1000,80" stroke="#4CAF50" stroke-width="4" fill="none"/>
+                    <circle cx="100" cy="130" r="12" fill="#E57373"/>
+                    <circle cx="300" cy="30" r="12" fill="#81C784"/>
+                    <circle cx="500" cy="130" r="12" fill="#FFB74D"/>
+                    <circle cx="700" cy="30" r="12" fill="#64B5F6"/>
+                    <circle cx="900" cy="130" r="12" fill="#FFB74D"/>
+                    <text x="100" y="156" text-anchor="middle" fill="#E57373" font-weight="bold" font-size="18">1998</text>
+                    <text x="300" y="15" text-anchor="middle" fill="#81C784" font-weight="bold" font-size="18">2002</text>
+                    <text x="500" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2019</text>
+                    <text x="700" y="15" text-anchor="middle" fill="#64B5F6" font-weight="bold" font-size="18">2022</text>
+                    <text x="900" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2023</text>
+                </svg>
+                
+                <div class="timeline-labels-bottom" style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px; position: relative; height: 100px;">
+                    <div style="position: absolute; left: 10%; transform: translateX(-50%); text-align: center; width: 180px;">
+                        <h3 style="color: var(--primary-green); font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_1998_label">主力房署及房協工程</h3>
+                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_1998_sublabel">公司成立，主力承接<br>房署及房協工程</p>
+                    </div>
+                    <div style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 180px;">
+                        <h3 style="color: var(--primary-green); font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2019_label">首個鴻輝石矢MiC產品</h3>
+                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2019_sublabel">開始研發MiC產品</p>
+                    </div>
+                    <div style="position: absolute; left: 90%; transform: translateX(-50%); text-align: center; width: 180px;">
+                        <h3 style="color: var(--primary-green); font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2023_label">簡悅屋</h3>
+                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2023_sublabel">開始研發鋼/石矢<br>MiC，命名為簡悅屋</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards-section" style="padding: 80px 40px; background-color: #f9f9f9;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" data-i18n="awards_title" style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 30px; text-align: center; font-weight: 700;">獎項及嘉許</h2>
+            <p data-i18n="awards_desc" style="max-width: 800px; margin: 0 auto; color: var(--text-light); text-align: center; font-size: 1rem;">榮獲多項產業認証和嘉許</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: About Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_about">關於我們</h3>
+                    <ul>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_mission_title">使命</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_vision_title">願景</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="mile_title">里程碑</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="awards_title">獎項及嘉許</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Our Business -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_business">公司業務</h3>
+                    <ul>
+                        <li><a href="business.html" style="color: #333;" data-i18n="business_products_title">產品</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="section_projects">工程項目</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="related_business_title">相關業務</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="qualifications_title">專業資格</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Sustainability -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_sustainability">可持續發展</h3>
+                    <ul>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="env_protect_title">環境保護</a></li>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="qm_title">質量管理</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Careers -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_careers">事業發展</h3>
+                    <ul>
+                        <li><a href="careers.html" style="color: #333;" data-i18n="join_us_title">加入我們</a></li>
+                        <li><a href="contacts.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Contact Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_contact">聯絡我們</h3>
+                    <ul>
+                        <li><a href="contact.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" style="text-align: left; padding-top: 40px; border-top: none;">
+                <p data-i18n="footer_copyright" style="color: #666;">© 2026 鴻輝預製件有限公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language-switch.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

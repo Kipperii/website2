@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientfunds Precast Ltd. | 鴻輝預製件有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Orientfunds Precast Ltd. Logo">
+            </a>
+            
+            <div class="header-right">
+                <div class="lang-switcher">
+                    <div class="language-switch">
+                        <button class="lang-btn" onclick="switchToEnglish()">EN</button>
+                        <span>|</span>
+                        <button class="lang-btn active" onclick="switchToChinese()">繁</button>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">關於我們</a></li>
+                        <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+                        <li><a href="sustainability.html" data-i18n="nav_sustainability">可持續發展</a></li>
+                        <li><a href="careers.html" class="active" data-i18n="nav_careers">事業發展</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span>☰</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav_about">關於我們</a></li>
+            <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+            <li><a href="sustainability.html" data-i18n="nav_sustainability">可持續發展</a></li>
+            <li><a href="careers.html" class="active" data-i18n="nav_careers">事業發展</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../opl-website-img/Top%20Pic%20%E4%BA%8B%E6%A5%AD%E7%99%BC%E5%B1%95.jpeg');">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" style="position: relative; color: white; text-align: left; max-width: 1200px; width: 100%; padding: 0 40px; margin: 0 auto;">
+             <h1 data-i18n="hero_title" style="font-size: 3.5rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6); line-height: 1.3; font-weight: 300; letter-spacing: 2px;">同心協力・精益求精<br>以心打造理想家園</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" style="background-color: #f5f5f5; padding: 15px 0; font-size: 0.9rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+            <a href="index.html" style="color: var(--text-light);" data-i18n="nav_home">首頁</a> <span style="color: var(--text-light);">/</span> <span style="color: var(--text-dark); font-weight: 500;" data-i18n="nav_careers">事業發展</span>
+        </div>
+    </div>
+
+    <!-- Career Opportunities -->
+    <section class="career-opportunities" style="padding: 80px 40px; background-color: #fff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div class="careers-grid-layout">
+                <div style="text-align: center;">
+                    <img src="../opl-website-img/Icon 事業發展 職業機會.png" alt="Career Opportunities" style="max-width: 300px; width: 100%; margin: 0 auto;">
+                </div>
+                <div>
+                    <h2 data-i18n="job_opp_title" style="color: #4CAF50; font-size: 2.5rem; margin-bottom: 30px; font-weight: 700;">職業機會</h2>
+                    <p data-i18n="job_opp_desc_1" style="font-size: 1.1rem; color: #333; margin-bottom: 30px; line-height: 1.8;"></p>
+                    <p data-i18n="job_opp_desc_2" style="font-size: 1rem; color: #666; line-height: 1.8; text-align: justify;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: About Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_about">關於我們</h3>
+                    <ul>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_mission_title">使命</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_vision_title">願景</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="mile_title">里程碑</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="awards_title">獎項及嘉許</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Our Business -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_business">公司業務</h3>
+                    <ul>
+                        <li><a href="business.html" style="color: #333;" data-i18n="business_products_title">產品</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="section_projects">工程項目</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="related_business_title">相關業務</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="qualifications_title">專業資格</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Sustainability -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_sustainability">可持續發展</h3>
+                    <ul>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="env_protect_title">環境保護</a></li>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="qm_title">質量管理</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Careers -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_careers">事業發展</h3>
+                    <ul>
+                        <li><a href="careers.html" style="color: #333;" data-i18n="join_us_title">加入我們</a></li>
+                        <li><a href="contacts.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Contact Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_contact">聯絡我們</h3>
+                    <ul>
+                        <li><a href="contact.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" style="text-align: left; padding-top: 40px; border-top: none;">
+                <p data-i18n="footer_copyright" style="color: #666;">© 2026 鴻輝預製件有限公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language-switch.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

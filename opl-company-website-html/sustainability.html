@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientfunds Precast Ltd. | 鴻輝預製件有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Orientfunds Precast Ltd. Logo">
+            </a>
+            
+            <div class="header-right">
+                <div class="lang-switcher">
+                    <div class="language-switch">
+                        <button class="lang-btn" onclick="switchToEnglish()">EN</button>
+                        <span>|</span>
+                        <button class="lang-btn active" onclick="switchToChinese()">繁</button>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">關於我們</a></li>
+                        <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+                        <li><a href="sustainability.html" class="active" data-i18n="nav_sustainability">可持續發展</a></li>
+                        <li><a href="careers.html" data-i18n="nav_careers">事業發展</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span>☰</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav_about">關於我們</a></li>
+            <li><a href="business.html" data-i18n="nav_business">公司業務</a></li>
+            <li><a href="sustainability.html" class="active" data-i18n="nav_sustainability">可持續發展</a></li>
+            <li><a href="careers.html" data-i18n="nav_careers">事業發展</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../opl-website-img/Top%20Pic%20%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%99%BC%E5%B1%95.JPG');">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="sustainability-hero-content">
+             <h1 data-i18n="hero_title" class="sustainability-hero-title">同心協力・精益求精<br>以心打造理想家園</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" style="color: #666;">首頁</a> <span class="breadcrumb-separator">/</span> <span class="breadcrumb-active" data-i18n="nav_sustainability">可持續發展</span>
+        </div>
+    </div>
+
+    <!-- Environmental Protection -->
+    <section class="env-protection-section">
+        <div class="container">
+             <div class="env-grid">
+                 <div>
+                    <h2 data-i18n="env_commitment_title" class="env-title">環境承諾</h2>
+                    <p data-i18n="env_commitment_desc" class="env-desc">我們深知城市發展必須兼顧環境保護，港興持續推動創新與改進，減少建築對自然的影響，為社會與未來世代守護可持續的生態。</p>
+                 </div>
+                 <div class="env-image">
+                     <img src="../opl-website-img/可持續發展  環境承諾.JPG" alt="Environmental Commitment">
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Quality Management & Certification -->
+    <section class="qm-section">
+        <div class="container">
+            <h2 data-i18n="qm_cert_title" class="qm-title">質量管理及品質認證</h2>
+
+            <div class="qm-text-container">
+                <p data-i18n="qm_cert_desc_1" style="margin-bottom: 20px;">我們以嚴謹的流程確保每一件預製構件的品質，從原材料檢驗、工廠生產到現場安裝，均遵循國際及本地標準，並設有多重檢測環節。透過智能化設備與精細化監控，我們確保產品尺寸精準、性能穩定，為合作夥伴提供可靠、安全、可持續的建築解決方案。</p>
+                <p data-i18n="qm_cert_desc_2">OPL在設計、生產、品質及環保方面，已獲香港品質保證局頒發的 ISO9001 及 ISO14001 認證，充分肯定我們的專業水平。同時，東莞預製件廠的職業健康與安全管理亦獲得國家認可監督機構——埃爾維質量認證中心的評定及證書，進一步彰顯我們對安全與責任的承諾。</p>
+            </div>
+
+            <!-- Quality Certification Images -->
+            <div class="quality-certification">
+                <div class="certification-images">
+                    <div class="certification-item">
+                        <img src="img/quality-management/quality-certification/img_quality_photo01.jpg" alt="ISO9001 Certificate" class="cert-img-iso" />
+                    </div>
+                    <div class="certification-item">
+                        <img src="img/quality-management/quality-certification/img_quality_photo02.jpg" alt="ISO14001 Certificate" class="cert-img-iso" />
+                    </div>
+                    <div class="certification-item">
+                        <img src="img/quality-management/quality-certification/img_quality_photo03.jpg" alt="OHS Certificate" class="cert-img-ohs" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: About Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_about">關於我們</h3>
+                    <ul>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_mission_title">使命</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="val_vision_title">願景</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="mile_title">里程碑</a></li>
+                        <li><a href="about.html" style="color: #333;" data-i18n="awards_title">獎項及嘉許</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Our Business -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_business">公司業務</h3>
+                    <ul>
+                        <li><a href="business.html" style="color: #333;" data-i18n="business_products_title">產品</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="section_projects">工程項目</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="related_business_title">相關業務</a></li>
+                        <li><a href="business.html" style="color: #333;" data-i18n="qualifications_title">專業資格</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Sustainability -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_sustainability">可持續發展</h3>
+                    <ul>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="env_protect_title">環境保護</a></li>
+                        <li><a href="sustainability.html" style="color: #333;" data-i18n="qm_title">質量管理</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Careers -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_careers">事業發展</h3>
+                    <ul>
+                        <li><a href="careers.html" style="color: #333;" data-i18n="join_us_title">加入我們</a></li>
+                        <li><a href="contacts.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Contact Us -->
+                <div class="footer-col">
+                    <h3 style="color: #4CAF50; font-weight: 700; margin-bottom: 20px;" data-i18n="nav_contact">聯絡我們</h3>
+                    <ul>
+                        <li><a href="contact.html" style="color: #333;" data-i18n="general_inquiry">一般查詢</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" style="text-align: left; padding-top: 40px; border-top: none;">
+                <p data-i18n="footer_copyright" style="color: #666;">© 2026 鴻輝預製件有限公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language-switch.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
