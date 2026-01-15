@@ -503,6 +503,22 @@ img {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .header-right {
+        margin-right: 20px;
+    }
+
+    .lang-switcher {
+        margin-bottom: 0;
+    }
+
     .header-right .nav {
         display: none;
     }
@@ -533,6 +549,10 @@ img {
         grid-column: auto;
     }
     
+    .hero-content {
+        text-align: center;
+    }
+
     .hero-content h1 {
         font-size: 2.2rem;
     }
