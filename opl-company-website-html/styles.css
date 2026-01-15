@@ -811,11 +811,12 @@ img {
 /* Projects Section */
 .projects-section .project-carousel {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 20px 5px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
     /* Hide scrollbar */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
@@ -826,17 +827,19 @@ img {
 }
 
 .project-card {
-    min-width: 280px;
-    max-width: 280px;
+    flex: 0 0 auto;
+    width: 19%; /* Try to fit 5 in a row on large screens */
+    min-width: 240px; /* But don't get too small */
     background: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     scroll-snap-align: start;
-    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .project-card .card-image {
-    height: 350px;
+    height: 300px; /* Adjusted height for better proportion */
     overflow: hidden;
 }
 
@@ -847,7 +850,7 @@ img {
 }
 
 .project-card .card-content {
-    padding: 20px;
+    padding: 15px;
     border-left: 5px solid var(--primary-green);
 }
 
@@ -859,7 +862,7 @@ img {
 }
 
 .project-card p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-dark);
     margin: 0;
@@ -869,6 +872,56 @@ img {
 .carousel-container {
     position: relative;
     padding: 0 50px;
+    max-width: 1400px; /* slightly wider to accommodate 5 items */
+    margin: 0 auto;
+}
+
+/* Responsive Projects */
+@media (max-width: 1200px) {
+    .project-card {
+        width: 30%; /* Show approx 3 items */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 45%; /* Show approx 2 items */
+        min-width: 220px;
+    }
+    
+    .carousel-container {
+        padding: 0 30px; /* Reduce padding */
+    }
+    
+    .carousel-btn {
+        font-size: 2rem;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-section .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-container {
+        padding: 0;
+    }
+    
+    .carousel-btn {
+        display: none; /* Hide buttons on mobile, allow swipe */
+    }
+    
+    .project-card {
+        width: 85vw; /* Mobile card width */
+        min-width: 260px;
+        margin-right: 15px; /* Slight margin for peep */
+    }
+    
+    .projects-section .project-carousel {
+        padding-left: 20px; /* Start with padding */
+        padding-right: 20px;
+    }
 }
 
 .carousel-btn {
@@ -1105,7 +1158,8 @@ img {
         grid-template-columns: 1fr;
     }
 }
-
+
+
 /* About Hongfai Section */
 .about-hongfai-grid {
     display: grid;
