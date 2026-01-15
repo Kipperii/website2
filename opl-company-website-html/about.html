@@ -71,7 +71,7 @@
 
     <section class="about-hongfai-section" style="padding: 80px 40px; background-color: white;">
         <div class="container" style="max-width: 1200px; margin: 0 auto;">
-            <div class="about-hongfai-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;">
+            <div class="about-hongfai-grid">
                 <div class="about-hongfai-img" style="text-align: center;">
                     <img src="img/opl-website-img/icon_home.png" alt="關於鴻輝" style="width: 100%; max-width: 350px;">
                 </div>
@@ -89,7 +89,7 @@
     <section class="core-values-section" style="padding: 80px 40px; background-color: #f9f9f9;">
         <div class="container" style="max-width: 1200px; margin: 0 auto;">
             <h2 class="section-title" data-i18n="val_title" style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 60px; text-align: center; font-weight: 700;">核心價值</h2>
-            <div class="core-values-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="core-values-grid">
                 <div class="value-card" style="border: 3px solid var(--primary-green); border-radius: 15px; padding: 40px 30px; text-align: center; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                     <div class="value-icon" style="margin-bottom: 25px;">
                         <img src="img/opl-website-img/Icon 目標.png" alt="Goal" style="width: 120px; margin: 0 auto; display: block;">
@@ -120,45 +120,109 @@
             <h2 class="section-title" data-i18n="mile_title" style="color: var(--primary-green); font-size: 2.5rem; margin-bottom: 60px; text-align: center; font-weight: 700;">里程碑</h2>
             
             <div class="timeline-container" style="max-width: 1000px; margin: 0 auto; position: relative;">
-                <div class="timeline-labels-top" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; position: relative; height: 100px;">
-                    <div style="position: absolute; left: 30%; transform: translateX(-50%); text-align: center; width: 180px;">
-                        <h3 style="color: #81C784; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2002_label">主力私人工程</h3>
-                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2002_sublabel">開始承接私人工程</p>
-                    </div>
-                    <div style="position: absolute; left: 70%; transform: translateX(-50%); text-align: center; width: 180px;">
-                        <h3 style="color: #64B5F6; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2022_label">輕石矢間牆板</h3>
-                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2022_sublabel">成功研發輕石矢間<br>牆板並推出市場</p>
-                    </div>
-                    </div>
                 
-                <svg width="100%" height="160" viewBox="0 -20 1000 180" preserveAspectRatio="xMidYMid meet" style="display: block;">
-                    <path d="M 0,80 C 40,80 60,130 100,130 C 140,130 260,30 300,30 C 340,30 460,130 500,130 C 540,130 660,30 700,30 C 740,30 860,130 900,130 C 940,130 960,80 1000,80" stroke="#4CAF50" stroke-width="4" fill="none"/>
-                    <circle cx="100" cy="130" r="12" fill="#E57373"/>
-                    <circle cx="300" cy="30" r="12" fill="#81C784"/>
-                    <circle cx="500" cy="130" r="12" fill="#FFB74D"/>
-                    <circle cx="700" cy="30" r="12" fill="#64B5F6"/>
-                    <circle cx="900" cy="130" r="12" fill="#FFB74D"/>
-                    <text x="100" y="156" text-anchor="middle" fill="#E57373" font-weight="bold" font-size="18">1998</text>
-                    <text x="300" y="15" text-anchor="middle" fill="#81C784" font-weight="bold" font-size="18">2002</text>
-                    <text x="500" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2019</text>
-                    <text x="700" y="15" text-anchor="middle" fill="#64B5F6" font-weight="bold" font-size="18">2022</text>
-                    <text x="900" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2023</text>
-                </svg>
-                
-                <div class="timeline-labels-bottom" style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px; position: relative; height: 100px;">
-                    <div style="position: absolute; left: 10%; transform: translateX(-50%); text-align: center; width: 180px;">
-                        <h3 style="color: #E57373; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_1998_label">主力房署及房協工程</h3>
-                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_1998_sublabel">公司成立，主力承接<br>房署及房協工程</p>
+                <!-- Desktop Timeline (SVG) -->
+                <div class="desktop-timeline">
+                    <div class="timeline-labels-top" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; position: relative; height: 100px;">
+                        <div style="position: absolute; left: 30%; transform: translateX(-50%); text-align: center; width: 180px;">
+                            <h3 style="color: #81C784; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2002_label">主力私人工程</h3>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2002_sublabel">開始承接私人工程</p>
+                        </div>
+                        <div style="position: absolute; left: 70%; transform: translateX(-50%); text-align: center; width: 180px;">
+                            <h3 style="color: #64B5F6; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2022_label">輕石矢間牆板</h3>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2022_sublabel">成功研發輕石矢間<br>牆板並推出市場</p>
+                        </div>
                     </div>
-                    <div style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 180px;">
-                        <h3 style="color: #FFB74D; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2019_label">首個鴻輝石矢MiC產品</h3>
-                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2019_sublabel">開始研發MiC產品</p>
+                    
+                    <svg width="100%" height="160" viewBox="0 -20 1000 180" preserveAspectRatio="xMidYMid meet" style="display: block;">
+                        <path d="M 0,80 C 40,80 60,130 100,130 C 140,130 260,30 300,30 C 340,30 460,130 500,130 C 540,130 660,30 700,30 C 740,30 860,130 900,130 C 940,130 960,80 1000,80" stroke="#4CAF50" stroke-width="4" fill="none"/>
+                        <circle cx="100" cy="130" r="12" fill="#E57373"/>
+                        <circle cx="300" cy="30" r="12" fill="#81C784"/>
+                        <circle cx="500" cy="130" r="12" fill="#FFB74D"/>
+                        <circle cx="700" cy="30" r="12" fill="#64B5F6"/>
+                        <circle cx="900" cy="130" r="12" fill="#FFB74D"/>
+                        <text x="100" y="156" text-anchor="middle" fill="#E57373" font-weight="bold" font-size="18">1998</text>
+                        <text x="300" y="15" text-anchor="middle" fill="#81C784" font-weight="bold" font-size="18">2002</text>
+                        <text x="500" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2019</text>
+                        <text x="700" y="15" text-anchor="middle" fill="#64B5F6" font-weight="bold" font-size="18">2022</text>
+                        <text x="900" y="156" text-anchor="middle" fill="#FFB74D" font-weight="bold" font-size="18">2023</text>
+                    </svg>
+                    
+                    <div class="timeline-labels-bottom" style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px; position: relative; height: 100px;">
+                        <div style="position: absolute; left: 10%; transform: translateX(-50%); text-align: center; width: 180px;">
+                            <h3 style="color: #E57373; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_1998_label">主力房署及房協工程</h3>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_1998_sublabel">公司成立，主力承接<br>房署及房協工程</p>
+                        </div>
+                        <div style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 180px;">
+                            <h3 style="color: #FFB74D; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2019_label">首個鴻輝石矢MiC產品</h3>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2019_sublabel">開始研發MiC產品</p>
+                        </div>
+                        <div style="position: absolute; left: 90%; transform: translateX(-50%); text-align: center; width: 180px;">
+                            <h3 style="color: #FFB74D; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2023_label">簡悅屋</h3>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2023_sublabel">開始研發鋼/石矢<br>MiC，命名為簡悅屋</p>
+                        </div>
                     </div>
-                    <div style="position: absolute; left: 90%; transform: translateX(-50%); text-align: center; width: 180px;">
-                        <h3 style="color: #FFB74D; font-size: 1rem; margin-bottom: 5px; font-weight: 600;" data-i18n="mile_2023_label">簡悅屋</h3>
-                        <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.4;" data-i18n="mile_2023_sublabel">開始研發鋼/石矢<br>MiC，命名為簡悅屋</p>
+                </div>
+
+                <!-- Mobile Timeline (Vertical list) -->
+                <div class="mobile-timeline">
+                    <!-- 1998 -->
+                    <div class="mobile-timeline-item">
+                        <div class="mobile-timeline-line"></div>
+                        <div class="mobile-timeline-dot" style="background-color: #E57373;"></div>
+                        <div class="mobile-timeline-content">
+                            <div class="mobile-timeline-year" style="color: #E57373;">1998</div>
+                            <div class="mobile-timeline-title" data-i18n="mile_1998_label">主力房署及房協工程</div>
+                            <div class="mobile-timeline-desc" data-i18n="mile_1998_sublabel">公司成立，主力承接<br>房署及房協工程</div>
+                        </div>
                     </div>
+                    
+                    <!-- 2002 -->
+                    <div class="mobile-timeline-item">
+                        <div class="mobile-timeline-line"></div>
+                        <div class="mobile-timeline-dot" style="background-color: #81C784;"></div>
+                        <div class="mobile-timeline-content">
+                            <div class="mobile-timeline-year" style="color: #81C784;">2002</div>
+                            <div class="mobile-timeline-title" data-i18n="mile_2002_label">主力私人工程</div>
+                            <div class="mobile-timeline-desc" data-i18n="mile_2002_sublabel">開始承接私人工程</div>
+                        </div>
                     </div>
+
+                    <!-- 2019 -->
+                    <div class="mobile-timeline-item">
+                        <div class="mobile-timeline-line"></div>
+                        <div class="mobile-timeline-dot" style="background-color: #FFB74D;"></div>
+                        <div class="mobile-timeline-content">
+                            <div class="mobile-timeline-year" style="color: #FFB74D;">2019</div>
+                            <div class="mobile-timeline-title" data-i18n="mile_2019_label">首個鴻輝石矢MiC產品</div>
+                            <div class="mobile-timeline-desc" data-i18n="mile_2019_sublabel">開始研發MiC產品</div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="mobile-timeline-item">
+                        <div class="mobile-timeline-line"></div>
+                        <div class="mobile-timeline-dot" style="background-color: #64B5F6;"></div>
+                        <div class="mobile-timeline-content">
+                            <div class="mobile-timeline-year" style="color: #64B5F6;">2022</div>
+                            <div class="mobile-timeline-title" data-i18n="mile_2022_label">輕石矢間牆板</div>
+                            <div class="mobile-timeline-desc" data-i18n="mile_2022_sublabel">成功研發輕石矢間<br>牆板並推出市場</div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="mobile-timeline-item">
+                        <div class="mobile-timeline-line"></div>
+                        <div class="mobile-timeline-dot" style="background-color: #FFB74D;"></div>
+                        <div class="mobile-timeline-content">
+                            <div class="mobile-timeline-year" style="color: #FFB74D;">2023</div>
+                            <div class="mobile-timeline-title" data-i18n="mile_2023_label">簡悅屋</div>
+                            <div class="mobile-timeline-desc" data-i18n="mile_2023_sublabel">開始研發鋼/石矢<br>MiC，命名為簡悅屋</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
                 </div>
             </div>
         </div>
