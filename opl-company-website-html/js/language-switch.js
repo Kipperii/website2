@@ -2,6 +2,7 @@ const translations = {
     "en": {
         "nav_home": "Home",
         "nav_about": "About Us",
+        "breadcrumb_home": "Home",
         "nav_business": "Our Business",
         "nav_sustainability": "Sustainability",
         "nav_news": "Latest News",
@@ -144,6 +145,7 @@ const translations = {
     "zh": {
         "nav_home": "首頁",
         "nav_about": "關於我們",
+        "breadcrumb_home": "主頁",
         "nav_business": "公司業務",
         "nav_sustainability": "可持續發展",
         "nav_news": "最新動態",
@@ -156,7 +158,7 @@ const translations = {
         "footer_contact_title": "聯絡我們",
         "footer_headquarters": "總公司：",
         "footer_factory": "東莞廠房：",
-        "footer_copyright": "© 2026 鴻輝預製件有限公司 版權所有",
+        "footer_copyright": "Copyright © 2026鴻輝預製件有限公司．版權所有。",
         "hero_title": "同心協力，精益求精<br>以心打造理想家園",
         "index_about_title": "關於鴻輝",
         "index_about_desc": "鴻輝預製件有限公司專注於為香港建築業提供高品質的預製混凝土構件。我們致力於通過創新技術和嚴格的質量管理，提升建築效率與安全性。憑藉多年的豐富經驗，我們已成為業界信賴的合作夥伴，參與了眾多大型住宅及基建項目。",
