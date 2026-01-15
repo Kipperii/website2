@@ -985,20 +985,6 @@ img {
     }
 }
 
-@media (max-width: 600px) {
-    .products-section .product-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .carousel-container {
-        padding: 0;
-    }
-    
-    .carousel-btn {
-        display: none; /* Hide buttons on mobile, allow swipe */
-    }
-}
-
 /* Sustainability Page */
 .sustainability-hero-content {
     position: relative;
