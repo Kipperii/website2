@@ -905,22 +905,27 @@ img {
     }
     
     .carousel-container {
-        padding: 0;
+        padding: 0 30px; /* Restore padding for buttons */
     }
     
     .carousel-btn {
-        display: none; /* Hide buttons on mobile, allow swipe */
+        display: flex; /* Restore buttons */
+        font-size: 2rem;
+        width: 30px;
+        background: rgba(255,255,255,0.7); /* Add background to see clearly over content if needed */
+        height: 40px;
+        border-radius: 4px;
     }
     
     .project-card {
-        width: 85vw; /* Mobile card width */
-        min-width: 260px;
-        margin-right: 15px; /* Slight margin for peep */
+        width: 80vw; /* Slightly reduce width to fit logic */
+        min-width: 240px;
+        margin-right: 15px; 
     }
     
     .projects-section .project-carousel {
-        padding-left: 20px; /* Start with padding */
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
