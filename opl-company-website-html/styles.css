@@ -1,4 +1,4 @@
-﻿/* Reset & Base Styles */
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -1105,23 +1105,22 @@ img {
         grid-template-columns: 1fr;
     }
 }
- 
- / *   A b o u t   H o n g f a i   S e c t i o n   * /  
- . a b o u t - h o n g f a i - g r i d   {  
-         d i s p l a y :   g r i d ;  
-         g r i d - t e m p l a t e - c o l u m n s :   1 f r   2 f r ;  
-         g a p :   8 0 p x ;  
-         a l i g n - i t e m s :   c e n t e r ;  
- }  
-  
- @ m e d i a   ( m a x - w i d t h :   9 0 0 p x )   {  
-         . a b o u t - h o n g f a i - g r i d   {  
-                 g r i d - t e m p l a t e - c o l u m n s :   1 f r ;  
-                 g a p :   4 0 p x ;  
-         }  
-         . a b o u t - h o n g f a i - i m g   {  
-                 m a r g i n :   0   a u t o ;  
-                 m a x - w i d t h :   2 5 0 p x ;  
-         }  
- }  
- 
+
+/* About Hongfai Section */
+.about-hongfai-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .about-hongfai-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .about-hongfai-img {
+        margin: 0 auto;
+        max-width: 250px;
+    }
+}
