@@ -876,6 +876,40 @@ img {
     margin: 0 auto;
 }
 
+/* Carousel Buttons (Base) */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary-green);
+    font-size: 3rem;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
 /* Responsive Projects */
 @media (max-width: 1200px) {
     .project-card {
@@ -929,38 +963,7 @@ img {
     }
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    cursor: pointer;
-    background: transparent;
-    color: var(--primary-green);
-    font-size: 3rem;
-    font-weight: bold;
-    border: none;
-    padding: 0;
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
 
-.carousel-btn:hover {
-    opacity: 1;
-}
-
-.carousel-btn.prev {
-    left: 0;
-}
-
-.carousel-btn.next {
-    right: 0;
-}
 
 /* Related Business */
 .related-business-section {
