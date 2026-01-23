@@ -236,8 +236,14 @@ img {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
+    gap: 40px 80px;
+    align-items: start;
+}
+
+.about-image {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: center;
 }
 
 .about-image img {
@@ -246,15 +252,19 @@ img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.about-text h2 {
+.about-title {
+    grid-column: 2;
+    grid-row: 1;
     color: var(--primary-green);
     font-size: 2.2rem;
     margin-bottom: 25px;
     font-weight: 700;
-    text-align: left; /* Left align specifically for About */
+    text-align: left;
 }
 
-.about-text p {
+.about-desc {
+    grid-column: 2;
+    grid-row: 2;
     font-size: 1.15rem;
     color: var(--text-light);
     margin-bottom: 35px;
@@ -262,7 +272,10 @@ img {
     text-align: justify;
 }
 
-.btn-text {
+.about-grid .btn-text {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
     color: var(--primary-green);
     font-weight: 700;
     font-size: 1.1rem;
@@ -270,7 +283,7 @@ img {
     align-items: center;
 }
 
-.btn-text:hover {
+.about-grid .btn-text:hover {
     color: var(--primary-green-dark);
     text-decoration: underline;
 }
@@ -528,9 +541,15 @@ img {
     }
     
     .about-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
+
+    .about-title { order: 1; margin-bottom: 20px; }
+    .about-image { order: 2; margin-bottom: 30px; }
+    .about-desc  { order: 3; margin-bottom: 20px; }
+    .about-grid .btn-text { order: 4; }
     
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -935,20 +954,58 @@ img {
 
 @media (max-width: 600px) {
     .products-section .product-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 0;
+        grid-template-columns: none;
+        padding-bottom: 20px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .products-section .product-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .products-section .product-card {
+        min-width: 100%;
+        scroll-snap-align: center;
+        border-radius: 0;
+        box-shadow: none;
+        flex-shrink: 0;
     }
     
     .carousel-container {
-        padding: 0 30px; /* Restore padding for buttons */
+        padding: 0; /* Remove padding for edge-to-edge look or keep buttons overlay */
     }
     
     .carousel-btn {
         display: flex; /* Restore buttons */
-        font-size: 2rem;
-        width: 30px;
-        background: rgba(255,255,255,0.7); /* Add background to see clearly over content if needed */
+        font-size: 1.5rem; 
+        width: 40px;
+        background: rgba(255,255,255,0.8); 
         height: 40px;
-        border-radius: 4px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        left: 10px;
+        transform: translateY(-50%);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    }
+
+    .products-section .carousel-btn {
+        top: 125px; /* Center on 250px Image */
+    }
+
+    .projects-section .carousel-btn {
+        top: 175px; /* Center on 350px Image */
+    }
+
+    .carousel-btn.next {
+        left: auto;
+        right: 10px;
     }
     
     .project-card {
@@ -1158,17 +1215,43 @@ img {
 .about-hongfai-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 80px;
-    align-items: center;
+    gap: 40px 80px;
+    align-items: start;
+}
+
+.about-hongfai-img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.about-hongfai-title {
+    grid-column: 2;
+    grid-row: 1;
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.about-hongfai-desc {
+    grid-column: 2;
+    grid-row: 2;
+    line-height: 2;
+    color: var(--text-dark);
+    font-size: 1rem;
+    text-align: justify;
 }
 
 @media (max-width: 900px) {
     .about-hongfai-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
-    .about-hongfai-img {
-        margin: 0 auto;
-        max-width: 250px;
-    }
+    .about-hongfai-title { order: 1; margin-bottom: 0px; text-align: center; } /* Add center for mobile title? Original wasn't centered but typically yes. Let's keep existing style or default. Actually h2 had inline styles but no text-align. */
+    .about-hongfai-img { order: 2; margin: 0 auto 30px auto; max-width: 250px; }
+    .about-hongfai-desc { order: 3; }
+    
+    /* Removed redundant rules */
 }

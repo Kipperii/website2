@@ -262,11 +262,20 @@
             if (!track || !prevBtn || !nextBtn) return;
 
             nextBtn.addEventListener('click', () => {
-                track.scrollBy({ left: 300, behavior: 'smooth' });
+                const itemWidth = track.firstElementChild ? track.firstElementChild.getBoundingClientRect().width : 300;
+                // If it's flex gap (Projects), add gap. If it's full width (Products mobile), width is enough.
+                const gap = 30; // Assuming 30px gap usually, or 0.
+                const scrollAmount = (track.classList.contains('product-grid') && window.innerWidth <= 600) ? track.clientWidth : (itemWidth + gap);
+                
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
 
             prevBtn.addEventListener('click', () => {
-                track.scrollBy({ left: -300, behavior: 'smooth' });
+                const itemWidth = track.firstElementChild ? track.firstElementChild.getBoundingClientRect().width : 300;
+                const gap = 30;
+                const scrollAmount = (track.classList.contains('product-grid') && window.innerWidth <= 600) ? track.clientWidth : (itemWidth + gap);
+                
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             });
         });
     </script>
