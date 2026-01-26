@@ -97,6 +97,14 @@ img {
     display: flex;
     gap: 8px;
     align-items: center;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
 }
 
 .lang-switcher button {
@@ -962,6 +970,7 @@ img {
         scroll-snap-type: x mandatory;
         gap: 0;
         grid-template-columns: none;
+        padding: 0;
         padding-bottom: 20px;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -980,7 +989,10 @@ img {
     }
     
     .carousel-container {
-        padding: 0; /* Remove padding for edge-to-edge look or keep buttons overlay */
+        padding: 0; /* Remove padding for edge-to-edge look */
+        margin-left: -20px; /* Counteract container padding */
+        margin-right: -20px;
+        width: calc(100% + 40px);
     }
     
     .carousel-btn {
@@ -1012,14 +1024,18 @@ img {
     }
     
     .project-card {
-        width: 80vw; /* Slightly reduce width to fit logic */
-        min-width: 240px;
-        margin-right: 15px; 
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+        flex-shrink: 0;
     }
     
     .projects-section .project-carousel {
         padding-left: 0;
         padding-right: 0;
+        gap: 0;
     }
 }
 
