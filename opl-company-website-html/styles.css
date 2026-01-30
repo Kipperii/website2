@@ -25,6 +25,11 @@ body {
     padding-top: 80px; /* Space for fixed header */
 }
 
+/* Prevent flash of Chinese content when English is selected */
+html.lang-en-pending body {
+    visibility: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
