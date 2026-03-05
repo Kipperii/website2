@@ -1011,6 +1011,17 @@ img {
     margin: 0;
 }
 
+.project-card .project-year {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--primary-green);
+    font-weight: 600;
+    background-color: rgba(0, 128, 0, 0.1);
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
 /* Carousel Container & Buttons */
 .carousel-container {
     position: relative;
