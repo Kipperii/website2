@@ -1890,3 +1890,395 @@ img {
         justify-content: center;
     }
 }
+
+/* ===== RESPONSIVE DESIGN FOR RECENT PROJECTS SECTION ===== */
+
+/* Tablet and below (900px) */
+@media (max-width: 900px) {
+    .recent-projects-container {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    
+    .year-display {
+        flex: 1 !important;
+        width: 100% !important;
+    }
+    
+    #current-year-display {
+        font-size: 4rem !important;
+    }
+    
+    .projects-list-container {
+        flex: 1 !important;
+        width: 100% !important;
+        padding: 0 20px !important;
+        min-height: auto !important;
+    }
+    
+    .timeline {
+        flex: 1 !important;
+        width: 100% !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px 0 !important;
+        gap: 15px !important;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 4px;
+        background-color: #4CAF50;
+        z-index: 0;
+    }
+    
+    .year-btn {
+        position: relative !important;
+        z-index: 1 !important;
+        margin-bottom: 0 !important;
+        padding: 8px 12px !important;
+        font-size: 1.2rem !important;
+        width: auto !important;
+    }
+}
+
+/* Mobile: Tablet landscape and medium phones (768px) */
+@media (max-width: 768px) {
+    .projects-list-container ul {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .projects-list-container li {
+        font-size: 1.1rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .projects-list-container span:first-child {
+        width: 12px !important;
+        height: 12px !important;
+        margin-right: 12px !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .year-display {
+        padding-top: 0 !important;
+    }
+    
+    #current-year-display {
+        font-size: 3rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .year-btn {
+        padding: 6px 10px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* Small phones (600px and below) */
+@media (max-width: 600px) {
+    .recent-projects-section {
+        padding: 40px 0 !important;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 40px !important;
+    }
+    
+    #current-year-display {
+        font-size: 2.5rem !important;
+    }
+    
+    .projects-list-container li {
+        font-size: 1rem !important;
+        margin-bottom: 10px !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .projects-list-container span:first-child {
+        width: 10px !important;
+        height: 10px !important;
+        margin-right: 10px !important;
+        margin-bottom: 2px !important;
+    }
+    
+    .container {
+        padding: 0 20px !important;
+    }
+    
+    .timeline {
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+    
+    .timeline::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #4CAF50;
+        order: -1;
+    }
+    
+    .year-btn {
+        padding: 5px 8px !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .year-display {
+        margin-bottom: 20px !important;
+    }
+}
+
+/* Extra small phones (420px and below) */
+@media (max-width: 420px) {
+    .recent-projects-section {
+        padding: 30px 0 !important;
+    }
+    
+    .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 30px !important;
+    }
+    
+    #current-year-display {
+        font-size: 2rem !important;
+    }
+    
+    .projects-list-container li {
+        font-size: 0.95rem !important;
+        margin-bottom: 8px !important;
+        align-items: flex-start !important;
+    }
+    
+    .projects-list-container span:first-child {
+        width: 8px !important;
+        height: 8px !important;
+        margin-right: 8px !important;
+        margin-top: 4px !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .container {
+        padding: 0 16px !important;
+    }
+    
+    .year-btn {
+        padding: 4px 6px !important;
+        font-size: 0.9rem !important;
+        width: 70px !important;
+    }
+    
+    .projects-list-container {
+        padding: 0 !important;
+    }
+}
+
+/* ===== RESPONSIVE DESIGN FOR THREE INSPECTION SYSTEM (SUSTAINABILITY PAGE) ===== */
+
+/* Tablet and below (900px) */
+@media (max-width: 900px) {
+    #three-inspection > .container > div {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    
+    #three-inspection > .container > div > div:first-child {
+        width: 100%;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #three-inspection > .container > div > div:last-child {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    
+    #three-inspection h2 {
+        text-align: center !important;
+    }
+    
+    #three-inspection p {
+        text-align: center !important;
+    }
+}
+
+/* Tablet portrait (768px and below) */
+@media (max-width: 768px) {
+    #three-inspection {
+        padding: 60px 0 !important;
+    }
+    
+    #three-inspection > .container > div {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    /* Left inspection cards container */
+    #three-inspection > .container > div > div:first-child {
+        width: 100% !important;
+        flex: 1 1 auto !important;
+        gap: 20px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    /* Individual inspection cards */
+    #three-inspection > .container > div > div:first-child > div {
+        display: flex !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+    
+    /* Inspection images container */
+    #three-inspection > .container > div > div:first-child > div > div {
+        width: 60px !important;
+        height: 60px !important;
+        flex-shrink: 0;
+    }
+    
+    #three-inspection > .container > div > div:first-child > div > div img {
+        max-width: 60px !important;
+        max-height: 60px !important;
+    }
+    
+    /* Inspection labels */
+    #three-inspection > .container > div > div:first-child > div > span {
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+        color: #006000;
+    }
+    
+    /* Right text content */
+    #three-inspection > .container > div > div:last-child {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    
+    #three-inspection h2 {
+        text-align: center !important;
+        font-size: 1.8rem !important;
+        margin-bottom: 15px !important;
+        color: #006000 !important;
+    }
+    
+    #three-inspection p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+        text-align: center !important;
+        color: #333;
+    }
+}
+
+/* Mobile phones (600px and below) */
+@media (max-width: 600px) {
+    #three-inspection {
+        padding: 40px 0 !important;
+    }
+    
+    #three-inspection > .container > div {
+        gap: 25px !important;
+    }
+    
+    #three-inspection > .container > div > div:first-child > div {
+        gap: 12px !important;
+        padding: 0 15px !important;
+    }
+    
+    /* Inspection images - reduce to 50px on mobile */
+    #three-inspection > .container > div > div:first-child > div > div {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    #three-inspection > .container > div > div:first-child > div > div img {
+        max-width: 50px !important;
+        max-height: 50px !important;
+    }
+    
+    /* Inspection labels - reduce font on mobile */
+    #three-inspection > .container > div > div:first-child > div > span {
+        font-size: 1.05rem !important;
+    }
+    
+    #three-inspection > .container > div > div:last-child {
+        padding: 0 15px !important;
+    }
+    
+    #three-inspection h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    #three-inspection p {
+        font-size: 0.95rem !important;
+        line-height: 1.5;
+    }
+}
+
+/* Extra small phones (420px and below) */
+@media (max-width: 420px) {
+    #three-inspection {
+        padding: 30px 0 !important;
+    }
+    
+    #three-inspection > .container {
+        padding: 0 16px !important;
+    }
+    
+    #three-inspection > .container > div {
+        gap: 20px !important;
+    }
+    
+    #three-inspection > .container > div > div:first-child > div {
+        gap: 10px !important;
+        padding: 0 12px !important;
+    }
+    
+    /* Inspection images - further reduce on extra small screens */
+    #three-inspection > .container > div > div:first-child > div > div {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    #three-inspection > .container > div > div:first-child > div > div img {
+        max-width: 45px !important;
+        max-height: 45px !important;
+    }
+    
+    /* Inspection labels - further reduce font on extra small screens */
+    #three-inspection > .container > div > div:first-child > div > span {
+        font-size: 0.95rem !important;
+        white-space: normal;
+    }
+    
+    #three-inspection > .container > div > div:last-child {
+        padding: 0 12px !important;
+    }
+    
+    #three-inspection h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    #three-inspection p {
+        font-size: 0.9rem !important;
+        line-height: 1.4;
+    }
+}
