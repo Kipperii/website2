@@ -541,19 +541,30 @@ img {
 
 @media (max-width: 768px) {
     .header-container {
-        justify-content: flex-start;
+        justify-content: space-between;
+        padding: 0 12px;
     }
 
     .logo {
-        margin-right: auto;
+        margin-right: 0;
+    }
+
+    .logo img {
+        height: 38px;
     }
 
     .header-right {
-        margin-right: 5px;
+        margin-right: 6px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
     .lang-switcher {
         margin-bottom: 0;
+        font-size: 0.8rem;
     }
 
     .header-right .nav {
@@ -562,6 +573,7 @@ img {
     
     .menu-toggle {
         display: block;
+        margin-left: 0;
     }
     
     .about-grid {
@@ -1426,6 +1438,66 @@ img {
     position: relative;
 }
 
+/* Business page patent gallery */
+.business-patent-gallery {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    overflow: visible;
+    padding: 8px 4px;
+}
+
+.business-patent-gallery .patent-image {
+    width: 280px;
+    height: 380px;
+    object-fit: contain;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background-color: #fff;
+    flex-shrink: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: none;
+    outline: none;
+}
+
+.business-patent-gallery .patent-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .business-patent-gallery {
+        overflow-x: auto;
+        overflow-y: visible;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .business-patent-gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    .business-patent-gallery .patent-image {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lang-switcher {
+        font-size: 0.75rem;
+    }
+
+    .business-patent-gallery .patent-image {
+        width: 180px;
+        height: 250px;
+    }
+}
+
 /* Precast Quality Management Section */
 .pqm-section {
     padding: 60px 0;
@@ -1667,7 +1739,18 @@ img {
     max-width: 700px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.8);
     /* Align with the Year text (Square 32px + Gap 15px = 47px) */
-    margin-left: 47px; 
+    margin-left: 47px;
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 1.2em;
+}
+
+.milestone-description li {
+    margin-bottom: 10px;
+}
+
+.milestone-description li:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -1787,10 +1870,6 @@ img {
       text-align: center;
   }
   
-  .sister-content {
-      /* Just alignment */
-  }
-
   .sister-link:hover {
       color: var(--primary-green) !important;
       text-decoration: underline !important;
