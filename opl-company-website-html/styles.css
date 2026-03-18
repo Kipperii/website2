@@ -1032,6 +1032,18 @@ img {
     border-radius: 12px;
 }
 
+/* Homepage project cards: keep green left line at consistent height */
+.home-projects-section .project-card .card-content {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-projects-section .project-card .project-year {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 /* Carousel Container & Buttons */
 .carousel-container {
     position: relative;
