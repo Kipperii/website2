@@ -979,6 +979,11 @@ img {
     overflow: hidden;
 }
 
+.projects-section .project-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 420px;
+}
+
 /* When inside grid, reset width */
 .project-grid .project-card {
     width: 100%;
